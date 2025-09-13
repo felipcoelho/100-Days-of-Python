@@ -1,11 +1,13 @@
-# Intentional errors in the code
 def greet_user(name):
-    print("Hello, " + name) # Missing colon in function definition
+    print("Hello, " + name)
 
-greet_user("Alice") # Missing closing parenthesis
+greet_user("Alice")
 
-for i in range(5): # Missing colon
-    print("Number: " + str(i)) # Concatenating string with integer
+for i in range(5):
+    print("Number: " + str(i))
 
 my_list = [1, 2, 3, 4, 5]
-print(my_list[10]) # IndexError: Accessing out-of-range index
+print(my_list[4])  # Correct index
+# Or, to print all elements:
+# for item in my_list:
+#     print(item)
